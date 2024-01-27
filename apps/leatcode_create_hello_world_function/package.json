@@ -5,7 +5,7 @@
     "lint": "eslint --fix ./ --ext .ts",
     "type": "tsc --noEmit"
   },
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
   "dependencies": {
     "bun-types": "latest"
