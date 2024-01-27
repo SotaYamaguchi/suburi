@@ -25,13 +25,13 @@ describe("createHelloWorld", () => {
     const args = Array.from({ "length": 10 }, (_, index) => index);
     const f = createHelloWorld();
     expect(args.length).toBe(10);
-    expect(f(args)).toBe("Hello World");
+    expect(f(...args)).toBe("Hello World");
   });
 
   test("引数が11個の場合、エラーを投げること", () => {
     const args = Array.from({ "length": 11 }, (_, index) => index);
     const f = createHelloWorld();
     expect(args.length).toBe(11);
-    expect(f(args)).toThrow();
+    expect(() => f(...args)).toThrow();
   });
 });
