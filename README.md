@@ -2,6 +2,25 @@
 
 素振り用モノリポワークスペース
 
+### Requirements
+
+- [volta](https://volta.sh/)
+  - pnpm は volta でインストールします
+
+### Setup
+
+```bash
+# ライブラリ等のインストール
+pnpm install
+```
+
+### Usage
+
+```bash
+# `/apps` 配下にプロジェクトを作成する
+pnpm generate-app ${プロジェクト名}
+```
+
 ### Apps and Packages
 
 - `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next`
