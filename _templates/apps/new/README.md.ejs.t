@@ -5,6 +5,12 @@ to: apps/<%= h.inflection.dasherize(name) %>/README.md
 
 [問題文](https://leetcode.com/problems/counter/?envType=study-plan-v2&envId=30-days-of-javascript)
 
-## 関連
+## Usage
 
-[LeatCode - 30 Days of JavaScript](https://leetcode.com/studyplan/30-days-of-javascript/)
+```bash
+# 対象ディレクトリに移動
+cd apps/<%= h.inflection.dasherize(name) %>
+
+# テスト実行
+bun test
+```
